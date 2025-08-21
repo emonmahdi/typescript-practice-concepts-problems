@@ -51,3 +51,44 @@ let candidate: Candidate = {
   email: "joe@example.com",
   phone: "(408)-123-4567",
 };
+
+/* 
+🔹 Problem 1: Primitive + Union (Type Alias)
+
+👉 একটি UserID টাইপ বানান যেটা হয় string অথবা number হতে পারে।
+এরপর id1 এবং id2 নামে ভ্যারিয়েবল বানান।
+
+
+*/
+
+type UserId = string | number;
+
+const id1: UserId = 122;
+const id2: UserId = "122";
+
+/*  
+🔹 Problem 2: Object Shape (Type Alias)
+
+👉 একটি Product টাইপ বানান যেখানে থাকবে:
+
+id: number 
+name: string 
+price: number 
+inStock?: boolean (optional)
+*/
+
+type Product = {
+  id: number;
+  name: string;
+  price: number;
+  inStock?: boolean;
+};
+
+
+const p1: Product={
+    id:21,
+    name: 'Laptop',
+    price:30000,
+    inStock:true
+}
+
