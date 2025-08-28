@@ -44,3 +44,21 @@ const myData:IME<string, number>= {
     age: '28years',
     salary: 50000
 }
+
+// keyof
+
+type MovieType = {
+    name: string,
+    duration:number,
+    category: string
+}
+
+const data:MovieType = {
+    name:'Tuffan',
+    duration:220,
+    category:'Action'
+}
+
+type MovieData = keyof MovieType // "name" | "duration" | "category"
+const data1:MovieData = "category";
+console.log(data[data1])
