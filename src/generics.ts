@@ -20,4 +20,13 @@ const dataA:MyGeneric<string, number> = ['hasan', 23]
 const dataB:MyGeneric<number, string> = [21,'hasan']
 const dataC:MyGeneric<number, boolean> = [21,true]
 
-console.log(dataA)
+// console.log(dataA)
+
+// function in generic
+
+const printInfo = <P, Q>(info1: P, info2: Q) => {
+    console.log(`Name: ${info1}, Age: ${info2}`);
+}
+
+printInfo<string, number>('Hasan', 23)
+printInfo<number, string>(22, 'Hasan')
