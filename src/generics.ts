@@ -30,3 +30,17 @@ const printInfo = <P, Q>(info1: P, info2: Q) => {
 
 printInfo<string, number>('Hasan', 23)
 printInfo<number, string>(22, 'Hasan')
+
+// object in generic
+
+interface IME<T, R> {
+    name: string,
+    age: T,
+    salary: number
+}
+
+const myData:IME<string, number>= {
+    name: 'Md Emon',
+    age: '28years',
+    salary: 50000
+}
