@@ -358,12 +358,12 @@ type ResolvedType = Awaited<Response>; // string
 | `Parameters<T>`            | ফাংশনের প্যারামিটার টাইপ নেয়         | `Parameters<typeof fn>`               |           |
 | `ConstructorParameters<T>` | ক্লাসের কনস্ট্রাক্টর প্যারামিটার নেয় | `ConstructorParameters<typeof Class>` |           |
 | `InstanceType<T>`          | ক্লাস ইনস্ট্যান্স টাইপ নেয়           | `InstanceType<typeof Class>`          |           |
-| `Awaited<T>`               | Promise resolve টাইপ নেয়             | `Awaited<Promise<T>>`                 |           |
+| `Awaited<T>`               | Promise resolve টাইপ নেয়             | `Awaited<Promise<T>>`                    |           |
 
 ---
 
 চাও কি আমি এখন প্রতিটি **Utility Type-এর ছোট ছোট প্র্যাকটিস টাস্ক** ও **ইন্টারভিউ প্রশ্ন** যোগ করে দিই?
-(যেমন `Partial`, `Pick`, `Record` নিয়ে ১-২টি করে প্র্যাকটিস ও প্রশ্ন)
+(যেমন `Partial`, `Pick`, `Record` নিয়ে ১-২টি করে প্র্যাকটিস ও প্রশ্ন)   
 
 
 */

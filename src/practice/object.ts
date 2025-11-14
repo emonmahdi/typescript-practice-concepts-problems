@@ -1,13 +1,13 @@
 
 const student: {
-    name: string,
-    age: number,
-    isPassed: boolean
+  name: string;
+  age: number;
+  isPassed: boolean;
 } = {
-    name: 'Emon Mahdi',
-    age: 28,
-    isPassed: true
-}
+  name: "Emon Mahdi",
+  age: 29,
+  isPassed: true,
+};
 console.log(student.name)
 console.log(student.age)
 
